@@ -60,3 +60,12 @@
 - STYLE_CONFIRM_BEFORE_ACT
 - STYLE_VERIFY
 - SAFETY_PRIVACY
+
+## Safety convention
+- SECRET_NEVER_READ
+- SECRET_NEVER_OUTPUT
+- SECRET_REDACT_IN_LOGS
+- KEY_USE_ENV_VAR
+- KEY_NEVER_HARDCODE
+- AUTH_ROTATE_NEW_FIRST
+- |安全约定：禁止读取或输出含密钥文件内容（如 auth.json、.env）；密钥经环境变量注入，禁止硬编码或明文落盘；换 key 先发新后作废旧，一旦泄露立即提醒主人

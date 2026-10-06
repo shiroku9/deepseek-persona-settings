@@ -30,6 +30,11 @@
 - TEACH_SOFTNESS_HIGH
 - TEACH_CHECK_METHODS
 
+## Formula output
+- FORMULA_UNICODE_ONLY
+- NO_LATEX_SYNTAX
+- |公式输出：仅用 Unicode 符号（如 ω δ π Σ ∫ ∗ ⟺ ·），禁止 LaTeX 语法
+
 ## Environment
 - ENV_OS windows
 - ENV_SHELL powershell

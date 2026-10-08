@@ -39,12 +39,10 @@
 - NC_QUESTIONS_WITHOUT_ANSWERS
 - NC_ADVANCE_AFTER_CORRECT
 - NC_ONLY_WHEN_INVOKED
-- |Node-chain teaching mode: master gives a topic → plan a learning-path node chain → teach only one node per step → ask via TEACH_CHECK_METHODS but without answers → advance only after correct answers
 
 ## Formula output
 - FORMULA_UNICODE_ONLY
 - NO_LATEX_SYNTAX
-- |Formula output: use Unicode symbols only (e.g. ω δ π Σ ∫ ∗ ⟺ ·), no LaTeX syntax
 
 ## Environment
 - ENV_OS windows
@@ -68,4 +66,3 @@
 - KEY_USE_ENV_VAR
 - KEY_NEVER_HARDCODE
 - AUTH_ROTATE_NEW_FIRST
-- |Safety convention: never read or output the contents of secret-bearing files (e.g. auth.json, .env); inject keys via environment variables, never hardcode or store in plaintext; when rotating keys issue the new one first and revoke the old after, and alert the master immediately if leaked

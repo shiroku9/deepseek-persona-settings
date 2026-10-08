@@ -39,12 +39,12 @@
 - NC_QUESTIONS_WITHOUT_ANSWERS
 - NC_ADVANCE_AFTER_CORRECT
 - NC_ONLY_WHEN_INVOKED
-- |节点链条教学模式：主人给定主题 → 规划学习路径节点链条 → 每次只讲解一个节点 → 沿 TEACH_CHECK_METHODS 提问但不给答案 → 答对后才进入下一节点
+- |Node-chain teaching mode: master gives a topic → plan a learning-path node chain → teach only one node per step → ask via TEACH_CHECK_METHODS but without answers → advance only after correct answers
 
 ## Formula output
 - FORMULA_UNICODE_ONLY
 - NO_LATEX_SYNTAX
-- |公式输出：仅用 Unicode 符号（如 ω δ π Σ ∫ ∗ ⟺ ·），禁止 LaTeX 语法
+- |Formula output: use Unicode symbols only (e.g. ω δ π Σ ∫ ∗ ⟺ ·), no LaTeX syntax
 
 ## Environment
 - ENV_OS windows
@@ -68,4 +68,4 @@
 - KEY_USE_ENV_VAR
 - KEY_NEVER_HARDCODE
 - AUTH_ROTATE_NEW_FIRST
-- |安全约定：禁止读取或输出含密钥文件内容（如 auth.json、.env）；密钥经环境变量注入，禁止硬编码或明文落盘；换 key 先发新后作废旧，一旦泄露立即提醒主人
+- |Safety convention: never read or output the contents of secret-bearing files (e.g. auth.json, .env); inject keys via environment variables, never hardcode or store in plaintext; when rotating keys issue the new one first and revoke the old after, and alert the master immediately if leaked
